@@ -1,0 +1,135 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #C8CEED; /* Matches chatbot background */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    text-align: center;
+    background-color: #0a1551; /* Chatbot button color */
+    padding: 20px;
+}
+
+header img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #0a1551; /* Same as chatbot button */
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: background 0.3s ease;
+}
+
+nav ul li a:hover {
+    background: #1f2a77; /* Slightly lighter shade */
+    border-radius: 5px;
+}
+
+/* Main Section */
+main {
+    text-align: center;
+    padding: 40px;
+}
+
+main h1 {
+    color: #0a1551;
+}
+
+main p {
+    color: #333;
+}
+
+/* Footer */
+footer {
+    background-color: #0a1551;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Chatbot Button Customization */
+#JotformAgent-01950954a88a75b2830ecedd0720e8a72bd3 {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #0a1551 !important;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+#JotformAgent-01950954a88a75b2830ecedd0720e8a72bd3:hover {
+    transform: scale(1.1);
+}
+
+/* Hide "Powered by JotForm" Branding */
+iframe[src*="jotform.com"] + div {
+    display: none !important;
+}
+
+.jotform-branding,
+a[href*="jotform.com"] {
+    display: none !important;
+    visibility: hidden !important;
+}
+
+/* Mobile Optimization */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    #JotformAgent-01950954a88a75b2830ecedd0720e8a72bd3 {
+        width: 50px;
+        height: 50px;
+        bottom: 15px;
+        right: 15px;
+    }
+iframe[src*="jotform.com"] + div {
+    display: none !important;
+}
+
+.jotform-branding,
+a[href*="jotform.com"] {
+    display: none !important;
+    visibility: hidden !important;
+}
+
+}

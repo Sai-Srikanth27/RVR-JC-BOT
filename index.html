@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RVR & JC College of Engineering</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <img src="header.jpg" alt="RVR & JC College of Engineering">
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Departments</a></li>
+            <li><a href="#">Admissions</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h1>Welcome to RVR & JC College of Engineering</h1>
+            <p>Providing quality education and innovation in the field of engineering.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 RVR & JC College of Engineering. All rights reserved.</p>
+    </footer>
+
+    <!-- JotForm Chatbot Integration -->
+    <script src="https://cdn.jotfor.ms/s/umd/latest/for-embedded-agent.js"></script>
+    <script>
+      window.addEventListener("DOMContentLoaded", function() {
+        window.AgentInitializer.init({
+          rootId: "JotformAgent-01950a00989079c2a902c09e773f072b569b",
+          formID: "01950a00989079c2a902c09e773f072b569b",
+          queryParams: ["skipWelcome=1", "maximizable=1"],
+          domain: "https://www.jotform.com",
+          isInitialOpen: false,
+          isDraggable: false,
+          background: "linear-gradient(180deg, #C8CEED 0%, #C8CEED 100%)",
+          buttonBackgroundColor: "#0a1551",
+          buttonIconColor: "#fff",
+          variant: false,
+          customizations: {
+            greeting: "Yes",
+            greetingMessage: "Hello! I'm an AI agent to help you about RVR & JC College of Engineering",
+            pulse: "Yes",
+            position: "right"
+          }
+        });
+      });
+    </script>
+
+    <script>
+        window.addEventListener("load", function() {
+            let brandingElements = document.querySelectorAll("div.jotform-branding, a[href*='jotform.com']");
+            brandingElements.forEach(element => element.remove());
+        });
+
+        // Monitor the page for branding elements and remove them if they reappear
+        let observer = new MutationObserver(function(mutations) {
+            mutations.forEach(() => {
+                document.querySelectorAll("div.jotform-branding, a[href*='jotform.com']").forEach(el => el.remove());
+            });
+        });
+
+        observer.observe(document.body, { childList: true, subtree: true });
+    </script>
+<script src="script.js"></script>
+
+</body>
+</html>
